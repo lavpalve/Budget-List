@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> BudgetList </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="top"> 
+			<h2> Avilable Balance in <span id="month" style="color: rgb(137, 13, 209);"> janevary 2015 </span></h2>	
+			<div class="balance" id="balance">
+			<span style="">+ 10.30 </span>
+			</div>
+			<div class="incomeBox">
+				<div style="margin-left: 3px;float: left;padding-top: 9px">Total Income </div>
+				<div class="income_balance" id = "income_balance"
+					 style="float: right;padding-top: 9px;padding-right: 35px";> +123.34
+				</div>
+			</div>
+			<div class="expenceBox">
+				<div style="margin-left: 3px;float: left;padding-top: 9px">Total Expences </div>
+				<div class="expence_percent"style="float: right;padding-top: 9px;padding-right: 5px"> 40% </div>
+				<div class="expence_balance"style="float: right;padding-top: 9px;padding-right: 5px"> +123.34
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="middle">
+					<div class="add">
+					   <div class="add__container">
+						   <select class="add__type">
+							   <option value="inc" selected>+</option>
+							   <option value="exp">-</option>
+						   </select>
+						   <input type="text" class="add__description" placeholder="Add description" required>
+						   <input type="number" class="add__value" placeholder="Value" required>
+						   <button onclick="addItem()" class="addBtn"><i class=""></i>Add</button>
+						   <button onclick="reset()" class="resetBtn"><i class=""></i>Reset</button>
+					   </div>
+				   </div>
+			   </div>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class="container clearfix">
+                <div class="income">
+                    <h2 class="icome__title">Income</h2>
+                    
+                    <div class="income_list" id="income_list">
+
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div class="expenses">
+                    <h2 class="expenses__title">Expenses</h2>
+                    
+                    <div class="expenses_list">
+                        
+                    </div>
+                </div>
+            </div>
+		</div>
+		
+		<script src="action.js"> </script>
+		<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+			  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
